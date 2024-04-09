@@ -6,8 +6,8 @@ interface GameBannerProps {
 
 export function GameBanner(props: GameBannerProps) {
     return (
-        <a href='#' className="relative rounded-lg overflow-hidden cursor-auto">
-            <img className='w-[180px] h-[240px] object-cover' src={props.bannerURL} alt={props.title} />
+        <div className="keen-slider__slide relative rounded-lg overflow-hidden">
+            <img className='w-full h-[240px] object-cover' src={props.bannerURL} alt={props.title} />
 
             <div className='w-full pt-16 pb-4 px-4 bg-game-gradient absolute bottom-0 left-0 right-0'>
                 <p className='p-0 text-white'>
@@ -17,6 +17,6 @@ export function GameBanner(props: GameBannerProps) {
                     </span>
                 </p>
             </div>
-        </a>
+        </div>
     )
 }
